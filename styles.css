@@ -1,0 +1,1736 @@
+:root {
+    --primary-color: #2E7D32;
+    --secondary-color: #81C784;
+    --text-color: #333;
+    --background-color: #F5F5F5;
+    --card-background: #ffffff;
+    --accent-color: #1B5E20;
+    --border-radius: 8px;
+    --bg-light: #f8f9fa;
+    --bg-accent: #e9ecef;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+    padding: 0;
+}
+
+.nav-item > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover > a {
+    background-color: var(--accent-color);
+}
+
+/* Menú desplegable */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--card-background);
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    padding: 0.5rem 0;
+    z-index: 1000;
+}
+
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    color: var(--text-color);
+    padding: 0.8rem 1.5rem;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        width: 100%;
+        box-shadow: none;
+        background-color: var(--accent-color);
+    }
+
+    .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu a {
+        color: white;
+        padding-left: 3rem;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: var(--primary-color);
+        color: white;
+    }
+}
+
+.section {
+    padding-top: 80px;
+    margin-top: -80px;
+    scroll-margin-top: 80px;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('amazon-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-metadata {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.hero-metadata p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 1rem 0;
+}
+
+.produtos-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.produto-card {
+    background: var(--card-background);
+    border-radius: 15px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.produto-card h3 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+.produto-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-section {
+    background: var(--background-color);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.info-section h4 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.info-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-section li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.info-section li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.cadeia-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.step-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.step-card h5 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.indicadores-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.indicador-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.stat-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+.stat-label {
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .produto-card {
+        padding: 1.5rem;
+    }
+
+    .cadeia-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .indicadores-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+}
+
+.produto-header h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    margin: 0;
+}
+
+.produto-card h4 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1rem;
+}
+
+.produto-card h5 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.produto-info,
+.produto-stats,
+.cadeia-produtiva,
+.impacto-economico,
+.analise-impacto,
+.impacto-ambiental {
+    background: var(--background-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.info-group {
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin-top: 1rem;
+}
+
+.info-group h5 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.produto-info ul, .produto-stats ul {
+    list-style: none;
+    padding: 0;
+}
+
+.produto-info li, .produto-stats li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.produto-info li:before, .produto-stats li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.source {
+    font-size: 0.9em;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.impact-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.check-list {
+    list-style: none;
+    padding: 0;
+}
+
+.conclusion-card {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.conclusion-card h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.sintese-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.sintese-item {
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+}
+
+.sintese-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.sintese-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sintese-item li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.sintese-item li:before {
+    content: "→";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.academic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.academic-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.pillar {
+    text-align: center;
+    padding: 1rem;
+    background: var(--secondary-color);
+    border-radius: var(--border-radius);
+    color: white;
+}
+
+.context-container {
+    padding: 2rem;
+}
+
+.map-container {
+    height: 500px;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#amazonMap {
+    height: 100%;
+    width: 100%;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.stat-card {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.stat-description {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.stat-card .source {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.impact-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.impact-chart {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.analysis-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.metric-card {
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.metric-card h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.metric-list {
+    list-style: none;
+    padding: 0;
+}
+
+.metric-list li {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.trends-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.trend-card {
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.analysis-card {
+    background: var(--card-background);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+.conclusion-container {
+    padding: 2rem;
+}
+
+.references {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+}
+
+.reference-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reference-list li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--primary-color);
+}
+
+.leaflet-popup-content {
+    font-family: 'Arial', sans-serif;
+}
+
+.leaflet-popup-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.custom-marker {
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary-color);
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+/* Estilos para la sección de Fundamentos */
+.quote-box {
+    background: rgba(46, 125, 50, 0.1);
+    padding: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+    margin: 1rem 0;
+}
+
+.quote-box blockquote {
+    margin: 0;
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+.dimensions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.dimension-item {
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+}
+
+.academic-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.academic-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.academic-list li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.research-highlights {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.research-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.research-list li {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.stats-highlight {
+    background: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.policy-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.policy-list li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.policy-list li:before {
+    content: "✓";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Fundamentos Section */
+.fundamentos-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.fundamento-card.conceito {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.conceito-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.conceito-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.conceito-list li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Pilares */
+.pilares-container {
+    margin: 3rem 0;
+}
+
+.pilares-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pilar-card {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.pilar-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.pilar-content {
+    margin-top: 1.5rem;
+}
+
+.pilar-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.pilar-list li {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.pilar-metrics {
+    background: var(--background-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+}
+
+.pilar-metrics p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* Instituições */
+.instituicoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.instituicao-card {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instituicao-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    filter: brightness(1.1);
+}
+
+.source {
+    color: var(--primary-color);
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.pesquisas-container {
+    margin-top: 3rem;
+}
+
+.pesquisas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pesquisa-card {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.pesquisa-desc {
+    margin: 1rem 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.pesquisa-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.pesquisa-details li {
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.produto-visual {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+    margin-bottom: 2rem;
+}
+
+.produto-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+.produto-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.produto-gallery img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.produto-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.timeline-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.timeline-item::after {
+    content: "→";
+    position: absolute;
+    right: -1rem;
+    top: 50%;
+    color: var(--primary-color);
+}
+
+.timeline-item:last-child::after {
+    display: none;
+}
+
+.economic-data,
+.impacto-grid,
+.environmental-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+@media (max-width: 1200px) {
+    .produto-content {
+        grid-template-columns: 1fr;
+    }
+    .pilares-grid,
+    .pesquisas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .produtos-grid {
+        padding: 1.5rem;
+    }
+
+    .produto-card {
+        padding: 1.5rem;
+    }
+
+    .timeline,
+    .economic-data,
+    .impacto-grid,
+    .environmental-data {
+        grid-template-columns: 1fr;
+    }
+
+    .impact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .academic-pillars {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .research-highlights {
+        grid-template-columns: 1fr;
+    }
+    
+    .dimensions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pesquisa-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .pilares-grid,
+    .pesquisas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .instituicoes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pesquisas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .produto-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline-item::after {
+        content: "↓";
+        right: 50%;
+        bottom: -1.5rem;
+        top: auto;
+    }
+
+    .produto-img {
+        height: 300px;
+    }
+}
+
+.cadeia-produtiva {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+}
+
+.cadeia-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.step-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para la distribución regional */
+.distribuicao-regional {
+    margin-top: 3rem;
+}
+
+.estado-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.estado-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.estado-card:hover {
+    transform: translateY(-5px);
+}
+
+.estado-card h5 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.producao-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.stat-box {
+    background: var(--bg-accent);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.stat-box .number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.stat-box .label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.conceitos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.conceito-card {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.conceito-card h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.data-item {
+    background: var(--background-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.data-item h4 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.data-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.data-item li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.data-item li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.data-item strong {
+    color: var(--primary-color);
+}
+
+.source {
+    font-size: 0.9em;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+    .data-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .conceitos-grid {
+        padding: 1rem;
+    }
+
+    .conceito-card {
+        padding: 1.5rem;
+    }
+
+    .data-item {
+        padding: 1.5rem;
+    }
+}
+
+/* Estilos para el botón de impresión */
+.produto-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.print-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.print-button:hover {
+    background: var(--accent-color);
+}
+
+.print-icon {
+    font-size: 1.2rem;
+}
+
+/* Estilos específicos para impresión */
+@media print {
+    /* Configuración básica de página A4 */
+    @page {
+        size: A4;
+        margin: 2cm;
+    }
+
+    /* Contenedor principal para impresión */
+    .printing-section {
+        width: 210mm; /* Ancho A4 */
+        min-height: 297mm; /* Alto A4 */
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    /* Estilos del producto para impresión */
+    .produto-card.printing {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Encabezado del producto */
+    .produto-card.printing h3 {
+        font-size: 24pt;
+        margin-bottom: 15pt;
+        text-align: center;
+        border-bottom: 2pt solid #000;
+        padding-bottom: 10pt;
+    }
+
+    /* Grid de contenido */
+    .produto-card.printing .produto-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15pt;
+    }
+
+    /* Secciones individuales */
+    .produto-card.printing .produto-info,
+    .produto-card.printing .cadeia-produtiva,
+    .produto-card.printing .produto-stats,
+    .produto-card.printing .sustentabilidade,
+    .produto-card.printing .produto-territorial {
+        break-inside: avoid;
+        margin-bottom: 15pt;
+        padding: 10pt;
+        border: 1pt solid #000;
+    }
+
+    /* Cadeia produtiva */
+    .produto-card.printing .cadeia-steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10pt;
+        break-inside: avoid;
+    }
+
+    /* Títulos de secciones */
+    .produto-card.printing h4 {
+        font-size: 14pt;
+        margin: 10pt 0;
+        border-bottom: 1pt solid #000;
+    }
+
+    /* Subtítulos */
+    .produto-card.printing h5 {
+        font-size: 12pt;
+        margin: 8pt 0;
+    }
+
+    /* Listas */
+    .produto-card.printing ul {
+        margin: 8pt 0;
+        padding-left: 15pt;
+    }
+
+    .produto-card.printing li {
+        margin-bottom: 4pt;
+        font-size: 10pt;
+        line-height: 1.3;
+    }
+
+    /* Indicadores grid */
+    .produto-card.printing .indicadores-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10pt;
+        break-inside: avoid;
+    }
+
+    /* Fuentes */
+    .produto-card.printing .source {
+        font-size: 8pt;
+        margin-top: 8pt;
+        font-style: italic;
+        border-top: 0.5pt solid #999;
+        padding-top: 4pt;
+    }
+
+    /* Asegurar que no haya saltos de página inadecuados */
+    .produto-card.printing .step-card,
+    .produto-card.printing .indicador-card {
+        break-inside: avoid;
+    }
+
+    /* Ocultar elementos innecesarios */
+    .navbar,
+    .print-button,
+    section:not(.printing-section) {
+        display: none !important;
+    }
+
+    .impact-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .analysis-card {
+        break-inside: avoid;
+        margin-bottom: 20pt;
+    }
+
+    .metric-card,
+    .trend-card {
+        break-inside: avoid;
+        border: 1pt solid #000;
+    }
+}
+
+/* Estilos para la sección de conclusión */
+.conclusion-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Referencias Bibliográficas */
+.references {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.reference-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.reference-list li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.reference-list li:before {
+    content: "📚";
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .sintese-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .conclusion-container {
+        padding: 1rem;
+    }
+    
+    .conclusion-card,
+    .references {
+        padding: 1.5rem;
+    }
+}
+
+/* Estilos para impresión */
+@media print {
+    .conclusion-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .conclusion-card,
+    .references {
+        break-inside: avoid;
+        border: 1pt solid #000;
+        margin-bottom: 20pt;
+        box-shadow: none;
+    }
+
+    .sintese-item {
+        break-inside: avoid;
+        border: 1pt solid #000;
+        margin-bottom: 15pt;
+    }
+
+    .reference-list li {
+        font-size: 9pt;
+        margin-bottom: 8pt;
+    }
+}
+
+/* Ajuste para el scroll con navbar fijo */
+html {
+    scroll-padding-top: 80px; /* Altura del navbar + un poco de espacio */
+    scroll-behavior: smooth;
+}
+
+/* Estilos para las secciones de productos y contexto */
+.produtos-container,
+.contexto-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.produto-card,
+.contexto-card {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Asegurar que los IDs sean alcanzables */
+#acai, #castanha, #andiroba, #cacau,
+#demografia, #economia, #biodiversidade {
+    scroll-margin-top: 80px;
+} 
+
+/* Estilos para modo presentación */
+.slide-mode {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 2000;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: none;
+}
+
+.slide.active {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slide-controls {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 2001;
+}
+
+.slide-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slide-progress {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+} 
+
+.presentation-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.presentation-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.presentation-sidebar li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.presentation-sidebar li:hover {
+    background: var(--accent-color);
+}
+
+.presentation-sidebar li.active {
+    background: white;
+    color: var(--primary-color);
+}
+
+.main-content {
+    margin-left: 250px;
+} 
+
+.presentation-button {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 1rem;
+}
+
+.with-sidebar {
+    padding-left: 250px;
+}
+
+.presentation-sidebar .exit {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    width: calc(250px - 4rem);
+}
+
+/* Mejorar la visibilidad de la sección activa */
+.presentation-sidebar li.active {
+    background: white;
+    color: var(--primary-color);
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Estilos para las cards de contexto */
+.contexto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.map-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#amazonMap {
+    height: 400px;
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.contexto-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.demografia-grid,
+.economia-grid,
+.biodiversidade-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.demografia-data,
+.economia-data,
+.biodiversidade-data {
+    background: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+}
+
+.contexto-card h4 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contexto-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contexto-card ul ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.contexto-card li {
+    margin-bottom: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .demografia-grid,
+    .economia-grid,
+    .biodiversidade-grid {
+        grid-template-columns: 1fr;
+    }
+} 
+
+/* Estilos para los popups del mapa */
+.estado-popup {
+    font-family: 'Arial', sans-serif;
+}
+
+.estado-popup h3 {
+    color: var(--primary-color);
+    margin: 0 0 10px 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+.estado-popup h4 {
+    color: var(--primary-color);
+    margin: 10px 0 5px 0;
+}
+
+.estado-popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.estado-popup li {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.leaflet-popup-content {
+    margin: 15px;
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: var(--border-radius);
+} 

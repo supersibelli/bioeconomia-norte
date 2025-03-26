@@ -1,0 +1,2266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioeconomia na Região Norte - 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#fundamentos">Fundamentos</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#conceito">Conceito</a></li>
+                    <li><a href="#pilares">Pilares Estruturantes</a></li>
+                    <li><a href="#pesquisas">Pesquisas em Desenvolvimento</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#contexto">Contexto Regional</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#demografia">Demografia</a></li>
+                    <li><a href="#economia">Economia</a></li>
+                    <li><a href="#biodiversidade">Biodiversidade</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#bioeconomia">Bioeconomia e Sustentabilidade</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#principios">Princípios</a></li>
+                    <li><a href="#indicadores">Indicadores</a></li>
+                    <li><a href="#inovacao">Inovação</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#produtos">Produtos</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#acai">Açaí</a></li>
+                    <li><a href="#castanha">Castanha-do-Pará</a></li>
+                    <li><a href="#cafe">Café Amazônico</a></li>
+                    <li><a href="#andiroba">Andiroba</a></li>
+                    <li><a href="#cacau">Cacau</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#impacto">Impacto</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#economico">Econômico</a></li>
+                    <li><a href="#social">Social</a></li>
+                    <li><a href="#ambiental">Ambiental</a></li>
+                    <li><a href="#projecoes">Projeções</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#conclusao">Conclusão</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#sintese">Síntese</a></li>
+                    <li><a href="#referencias">Referências</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero" class="section">
+            <h1>Bioeconomia na Região Norte do Brasil</h1>
+            <p>Uma análise socioeconômica e ambiental do desenvolvimento sustentável</p>
+            <div class="hero-metadata">
+                <p>Relatório Técnico</p>
+                <p>Análise Regional</p>
+                <p>2025</p>
+            </div>
+        </section>
+
+        <section id="fundamentos" class="section">
+            <h2>Fundamentos da Bioeconomia na Amazônia</h2>
+            
+            <div class="fundamentos-container">
+                <!-- Conceito -->
+                <div id="conceito" class="fundamento-card conceito">
+                    <h3>O que é Bioeconomia Amazônica?</h3>
+                    <div class="conceito-content">
+                        <p class="fundamento-text">
+                            A bioeconomia amazônica representa um modelo econômico inovador que integra:
+                        </p>
+                        <ul class="conceito-list">
+                            <li>Uso sustentável da biodiversidade regional</li>
+                            <li>Valorização dos conhecimentos tradicionais</li>
+                            <li>Inovação tecnológica e científica</li>
+                            <li>Desenvolvimento socioeconômico local</li>
+                            <li>Preservação dos serviços ecossistêmicos</li>
+                        </ul>
+                        <p class="source">Fonte: Embrapa Amazônia Oriental, 2023</p>
+                    </div>
+                </div>
+
+                <!-- Pilares Fundamentais -->
+                <div id="pilares" class="pilares-container">
+                    <h3>Pilares Estruturantes</h3>
+                    <div class="pilares-grid">
+                        <!-- Pilar Ambiental -->
+                        <div class="pilar-card">
+                            <div class="pilar-icon">🌿</div>
+                            <h4>Sustentabilidade Ambiental</h4>
+                            <div class="pilar-content">
+                                <ul class="pilar-list">
+                                    <li><strong>Conservação:</strong> Proteção da biodiversidade</li>
+                                    <li><strong>Serviços Ambientais:</strong> Manutenção dos ciclos naturais</li>
+                                    <li><strong>Manejo Sustentável:</strong> Uso racional dos recursos</li>
+                                    <li><strong>Regeneração:</strong> Recuperação de áreas degradadas</li>
+                                </ul>
+                                <div class="pilar-metrics">
+                                    <p><strong>Área Preservada:</strong> 44,1 milhões ha</p>
+                                    <p><strong>Espécies Catalogadas:</strong> 14.000+</p>
+                                </div>
+                                <p class="source">Fonte: INPA, 2023</p>
+                            </div>
+                        </div>
+
+                        <!-- Pilar Social -->
+                        <div class="pilar-card">
+                            <div class="pilar-icon">👥</div>
+                            <h4>Desenvolvimento Social</h4>
+                            <div class="pilar-content">
+                                <ul class="pilar-list">
+                                    <li><strong>Saberes Tradicionais:</strong> Valorização cultural</li>
+                                    <li><strong>Governança:</strong> Gestão territorial participativa</li>
+                                    <li><strong>Inclusão:</strong> Geração de renda local</li>
+                                    <li><strong>Capacitação:</strong> Formação técnica continuada</li>
+                                </ul>
+                                <div class="pilar-metrics">
+                                    <p><strong>Comunidades Beneficiadas:</strong> 850+</p>
+                                    <p><strong>Famílias Envolvidas:</strong> 327.000</p>
+                                </div>
+                                <p class="source">Fonte: MPEG, 2023</p>
+                            </div>
+                        </div>
+
+                        <!-- Pilar Econômico -->
+                        <div class="pilar-card">
+                            <div class="pilar-icon">💰</div>
+                            <h4>Viabilidade Econômica</h4>
+                            <div class="pilar-content">
+                                <ul class="pilar-list">
+                                    <li><strong>Cadeias Produtivas:</strong> Estruturação sustentável</li>
+                                    <li><strong>Valor Agregado:</strong> Beneficiamento local</li>
+                                    <li><strong>Inovação:</strong> P&D em bioeconomia</li>
+                                    <li><strong>Mercados:</strong> Acesso a mercados diferenciados</li>
+                                </ul>
+                                <div class="pilar-metrics">
+                                    <p><strong>Faturamento Anual:</strong> R$ 32,5 bilhões</p>
+                                    <p><strong>Empregos Gerados:</strong> 310.000</p>
+                                </div>
+                                <p class="source">Fonte: SUFRAMA, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pesquisas em Desenvolvimento -->
+                <div id="pesquisas" class="pesquisas-container">
+                    <h3>Pesquisas Estratégicas em Desenvolvimento</h3>
+                    <div class="pesquisas-grid">
+                        <!-- Pesquisa 1 -->
+                        <div class="pesquisa-card">
+                            <h4>Desenvolvimento de Bioprodutos</h4>
+                            <div class="pesquisa-content">
+                                <p class="pesquisa-desc">
+                                    Pesquisa focada no desenvolvimento de produtos cosméticos e farmacêuticos utilizando óleos essenciais da Amazônia, com ênfase em processos sustentáveis de extração e beneficiamento.
+                                </p>
+                                <div class="pesquisa-details">
+                                    <ul>
+                                        <li><strong>Instituição:</strong> UFPA - Instituto de Ciências Biológicas</li>
+                                        <li><strong>Coordenação:</strong> Dra. Maria Elena Crespo-López</li>
+                                        <li><strong>Período:</strong> 2022-2024</li>
+                                        <li><strong>Investimento:</strong> R$ 2,8 milhões</li>
+                                        <li><strong>Parcerias:</strong> 3 empresas, 2 comunidades</li>
+                                    </ul>
+                                </div>
+                                <p class="source">Fonte: Projeto CNPq 402.783/2021-3</p>
+                            </div>
+                        </div>
+
+                        <!-- Pesquisa 2 -->
+                        <div class="pesquisa-card">
+                            <h4>Bioeconomia do Açaí</h4>
+                            <div class="pesquisa-content">
+                                <p class="pesquisa-desc">
+                                    Estudo abrangente sobre a otimização da cadeia produtiva do açaí, incluindo manejo sustentável, processamento e desenvolvimento de novos produtos.
+                                </p>
+                                <div class="pesquisa-details">
+                                    <ul>
+                                        <li><strong>Instituição:</strong> Embrapa Amazônia Oriental</li>
+                                        <li><strong>Coordenação:</strong> Dr. João Tomé de Farias Neto</li>
+                                        <li><strong>Período:</strong> 2023-2025</li>
+                                        <li><strong>Investimento:</strong> R$ 3,5 milhões</li>
+                                        <li><strong>Abrangência:</strong> 45 comunidades</li>
+                                    </ul>
+                                </div>
+                                <p class="source">Fonte: Projeto FAPESPA 2021/567892</p>
+                            </div>
+                        </div>
+
+                        <!-- Pesquisa 3 -->
+                        <div class="pesquisa-card">
+                            <h4>Valoração de Serviços Ecossistêmicos</h4>
+                            <div class="pesquisa-content">
+                                <p class="pesquisa-desc">
+                                    Análise econômica dos serviços ambientais prestados por sistemas agroflorestais na Amazônia, com foco em carbono e biodiversidade.
+                                </p>
+                                <div class="pesquisa-details">
+                                    <ul>
+                                        <li><strong>Instituição:</strong> MPEG - Coordenação de Ciências da Terra</li>
+                                        <li><strong>Coordenação:</strong> Dra. Ima Célia Guimarães Vieira</li>
+                                        <li><strong>Período:</strong> 2023-2025</li>
+                                        <li><strong>Área Estudada:</strong> 180.000 hectares</li>
+                                        <li><strong>Comunidades Envolvidas:</strong> 35</li>
+                                    </ul>
+                                </div>
+                                <p class="source">Fonte: MPEG - Projeto FA-23789/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conceitos-fundamentais" class="section">
+            <h2>Conceitos Fundamentais da Bioeconomia</h2>
+            
+            <div class="conceitos-grid">
+                <!-- Importância Econômica -->
+                <div class="conceito-card">
+                    <h3>Importância Econômica</h3>
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>Região Norte</h4>
+                            <ul>
+                                <li><strong>PIB da Bioeconomia:</strong> R$ 32,5 bilhões (2023)</li>
+                                <li><strong>Participação no PIB regional:</strong> 15,4%</li>
+                                <li><strong>Empregos diretos:</strong> 310.000</li>
+                                <li><strong>Exportações:</strong> US$ 3,2 bilhões</li>
+                            </ul>
+                            <p class="source">Fonte: SUDAM - Superintendência do Desenvolvimento da Amazônia, 2023</p>
+                        </div>
+                        
+                        <div class="data-item">
+                            <h4>Brasil</h4>
+                            <ul>
+                                <li><strong>PIB da Bioeconomia:</strong> R$ 148,7 bilhões (2023)</li>
+                                <li><strong>Participação no PIB nacional:</strong> 8,2%</li>
+                                <li><strong>Empregos totais:</strong> 1,2 milhão</li>
+                                <li><strong>Exportações totais:</strong> US$ 12,5 bilhões</li>
+                            </ul>
+                            <p class="source">Fonte: MAPA - Ministério da Agricultura, Pecuária e Abastecimento, 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bioeconomia e Sustentabilidade -->
+                <div class="conceito-card">
+                    <h3>Bioeconomia e Sustentabilidade</h3>
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>Região Norte</h4>
+                            <ul>
+                                <li><strong>Áreas preservadas:</strong> 44,1 milhões de hectares</li>
+                                <li><strong>Comunidades tradicionais:</strong> 327 mil famílias</li>
+                                <li><strong>Produtos da sociobiodiversidade:</strong> 85 catalogados</li>
+                                <li><strong>Projetos sustentáveis:</strong> 450 em execução</li>
+                            </ul>
+                            <p class="source">Fonte: INPA - Instituto Nacional de Pesquisas da Amazônia, 2023</p>
+                        </div>
+                        
+                        <div class="data-item">
+                            <h4>Brasil</h4>
+                            <ul>
+                                <li><strong>Investimento em pesquisa:</strong> R$ 2,8 bilhões</li>
+                                <li><strong>Patentes verdes:</strong> 1.250 registradas</li>
+                                <li><strong>Startups de bioeconomia:</strong> 380 ativas</li>
+                                <li><strong>Acordos internacionais:</strong> 28 vigentes</li>
+                            </ul>
+                            <p class="source">Fonte: MCTI - Ministério da Ciência, Tecnologia e Inovações, 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emissões e Sustentabilidade -->
+                <div class="conceito-card">
+                    <h3>Emissões de CO² e Sustentabilidade</h3>
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>Região Norte</h4>
+                            <ul>
+                                <li><strong>Sequestro de carbono:</strong> 415 milhões ton/ano</li>
+                                <li><strong>Redução de emissões:</strong> 28% desde 2019</li>
+                                <li><strong>Projetos REDD+:</strong> 89 em operação</li>
+                                <li><strong>Créditos de carbono gerados:</strong> US$ 542 milhões</li>
+                            </ul>
+                            <p class="source">Fonte: INPE - Instituto Nacional de Pesquisas Espaciais, 2023</p>
+                        </div>
+                        
+                        <div class="data-item">
+                            <h4>Brasil</h4>
+                            <ul>
+                                <li><strong>Meta de redução até 2030:</strong> 37% das emissões</li>
+                                <li><strong>Investimento em tecnologia limpa:</strong> R$ 15,3 bilhões</li>
+                                <li><strong>Projetos de baixo carbono:</strong> 235 certificados</li>
+                                <li><strong>Mercado de carbono:</strong> US$ 1,8 bilhão</li>
+                            </ul>
+                            <p class="source">Fonte: Ministério do Meio Ambiente, 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contexto" class="section">
+            <h2>Contexto Regional - Região Norte do Brasil</h2>
+            
+            <div class="contexto-container">
+                <!-- Mapa Interativo -->
+                <div class="map-container">
+                    <div id="amazonMap"></div>
+                    <p class="description">Mapa interativo da Região Norte do Brasil, composta pelos estados: Acre, Amapá, Amazonas, Pará, Rondônia, Roraima e Tocantins</p>
+                    <p class="source">Fonte: IBGE/SUDAM, 2024</p>
+                </div>
+
+                <!-- Demografia -->
+                <div id="demografia" class="contexto-card">
+                    <h3>Demografia da Região Norte</h3>
+                    <div class="demografia-grid">
+                        <div class="demografia-data">
+                            <h4>População</h4>
+                            <ul>
+                                <li><strong>População Total (2024):</strong> 19,2 milhões de habitantes</li>
+                                <li><strong>Distribuição:</strong>
+                                    <ul>
+                                        <li>Urbana: 73,5% (14,1 milhões)</li>
+                                        <li>Rural: 26,5% (5,1 milhões)</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Comunidades Tradicionais:</strong>
+                                    <ul>
+                                        <li>Indígenas: 480.000 pessoas</li>
+                                        <li>Quilombolas: 175.000 pessoas</li>
+                                        <li>Ribeirinhos: 327.000 famílias</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: IBGE - Censo Demográfico 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Economia -->
+                <div id="economia" class="contexto-card">
+                    <h3>Economia Regional</h3>
+                    <div class="economia-grid">
+                        <div class="economia-data">
+                            <h4>Indicadores Macroeconômicos (2024)</h4>
+                            <ul>
+                                <li><strong>PIB Regional:</strong> R$ 425,3 bilhões
+                                    <ul>
+                                        <li>Participação no PIB nacional: 6,2%</li>
+                                        <li>Crescimento anual: 3,5%</li>
+                                        <li>PIB per capita: R$ 22.150</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Exportações:</strong> US$ 32,8 bilhões
+                                    <ul>
+                                        <li>Principais produtos: Minérios, Soja, Produtos Florestais</li>
+                                        <li>Produtos da Bioeconomia: US$ 4,2 bilhões</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: SUDAM/IBGE/MDIC, 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biodiversidade -->
+                <div id="biodiversidade" class="contexto-card">
+                    <h3>Biodiversidade e Recursos Naturais</h3>
+                    <div class="biodiversidade-grid">
+                        <div class="biodiversidade-data">
+                            <h4>Cobertura Florestal</h4>
+                            <ul>
+                                <li><strong>Área Total:</strong> 3,8 milhões km²</li>
+                                <li><strong>Cobertura Florestal:</strong> 73,5% da área total</li>
+                                <li><strong>Áreas Protegidas:</strong> 
+                                    <ul>
+                                        <li>Unidades de Conservação: 28%</li>
+                                        <li>Terras Indígenas: 23%</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: INPE/ICMBio, 2024</p>
+                        </div>
+
+                        <div class="biodiversidade-data">
+                            <h4>Espécies Catalogadas</h4>
+                            <ul>
+                                <li><strong>Flora:</strong> 45.000 espécies</li>
+                                <li><strong>Fauna:</strong> 
+                                    <ul>
+                                        <li>Mamíferos: 425 espécies</li>
+                                        <li>Aves: 1.300 espécies</li>
+                                        <li>Peixes: 2.200 espécies</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: MPEG/INPA, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bioeconomia" class="section">
+            <h2>Bioeconomia e Sustentabilidade na Amazônia</h2>
+            
+            <div class="bioeconomia-container">
+                <!-- Visão Geral -->
+                <div class="visao-geral-card">
+                    <h3>Panorama da Bioeconomia Amazônica</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h4>Valor Total do Setor</h4>
+                            <p class="stat-number">R$ 8,5 bilhões</p>
+                            <p class="stat-description">Receita anual (2024)</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Empregos Gerados</h4>
+                            <p class="stat-number">450.000</p>
+                            <p class="stat-description">Diretos e indiretos</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Comunidades Envolvidas</h4>
+                            <p class="stat-number">1.250</p>
+                            <p class="stat-description">Em toda região</p>
+                        </div>
+                    </div>
+                    <p class="source">Fonte: SUDAM/IBGE (2024)</p>
+                </div>
+
+                <!-- Pilares da Bioeconomia -->
+                <div class="pilares-section">
+                    <h3>Pilares Fundamentais</h3>
+                    <div class="pilares-grid">
+                        <div class="pilar-card">
+                            <h4>Conservação Ambiental</h4>
+                            <ul class="pilar-list">
+                                <li><strong>Áreas Preservadas:</strong>
+                                    <ul>
+                                        <li>Unidades de conservação: 1,2 milhão km²</li>
+                                        <li>Corredores ecológicos: 850.000 km²</li>
+                                        <li>Áreas de manejo: 450.000 km²</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Investimentos:</strong> R$ 280 milhões/ano</li>
+                            </ul>
+                            <p class="source">Fonte: ICMBio/MMA (2024)</p>
+                        </div>
+
+                        <div class="pilar-card">
+                            <h4>Desenvolvimento Social</h4>
+                            <ul class="pilar-list">
+                                <li><strong>Beneficiários:</strong>
+                                    <ul>
+                                        <li>Comunidades tradicionais: 850</li>
+                                        <li>Agricultores familiares: 125.000</li>
+                                        <li>Cooperativas: 280</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Renda média gerada:</strong> R$ 2.800/família</li>
+                            </ul>
+                            <p class="source">Fonte: PNUD/IBGE (2024)</p>
+                        </div>
+
+                        <div class="pilar-card">
+                            <h4>Inovação Tecnológica</h4>
+                            <ul class="pilar-list">
+                                <li><strong>Centros de Pesquisa:</strong> 45</li>
+                                <li><strong>Projetos Ativos:</strong> 235</li>
+                                <li><strong>Patentes Registradas:</strong> 180</li>
+                                <li><strong>Investimento P&D:</strong> R$ 450 milhões</li>
+                            </ul>
+                            <p class="source">Fonte: CNPq/FAPEAM (2024)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Indicadores de Sustentabilidade -->
+                <div class="indicadores-section">
+                    <h3>Indicadores de Sustentabilidade</h3>
+                    <div class="indicadores-grid">
+                        <div class="indicador-card">
+                            <h4>Ambiental</h4>
+                            <div class="indicador-content">
+                                <ul>
+                                    <li>Redução do desmatamento: -15%</li>
+                                    <li>Regeneração florestal: 125.000 ha/ano</li>
+                                    <li>Emissões evitadas: 45 MtCO²e/ano</li>
+                                    <li>Recursos hídricos preservados: 85%</li>
+                                </ul>
+                                <p class="source">Fonte: INPE/PRODES (2024)</p>
+                            </div>
+                        </div>
+
+                        <div class="indicador-card">
+                            <h4>Social</h4>
+                            <div class="indicador-content">
+                                <ul>
+                                    <li>Empregos verdes: 125.000</li>
+                                    <li>Capacitação técnica: 35.000/ano</li>
+                                    <li>Aumento de renda: +45%</li>
+                                    <li>Inclusão produtiva: 85.000 famílias</li>
+                                </ul>
+                                <p class="source">Fonte: MDS/IBGE (2024)</p>
+                            </div>
+                        </div>
+
+                        <div class="indicador-card">
+                            <h4>Econômico</h4>
+                            <div class="indicador-content">
+                                <ul>
+                                    <li>Novos negócios: 280 empresas</li>
+                                    <li>Investimentos: R$ 1,2 bilhão</li>
+                                    <li>Exportações: US$ 850 milhões</li>
+                                    <li>ROI médio: 25% a.a.</li>
+                                </ul>
+                                <p class="source">Fonte: BNDES/SUDAM (2024)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="section">
+            <h2>Produtos Emblemáticos da Bioeconomia Amazônica</h2>
+            <div class="produtos-grid">
+                <!-- Açaí -->
+                <div id="acai" class="produto-card">
+                    <h3>Açaí</h3>
+                    <div class="produto-content">
+                        <!-- Características Básicas -->
+                        <div class="info-section">
+                            <h4>Características</h4>
+                            <ul>
+                                <li><span>Nome científico:</span> Euterpe oleracea</li>
+                                <li><span>Origem:</span> Região Amazônica</li>
+                                <li><span>Tipo:</span> Fruto da palmeira</li>
+                                <li><span>Safra principal:</span> Julho a Dezembro</li>
+                                <li><span>Área de cultivo:</span> 235.000 hectares</li>
+                                <li><span>Produtividade média:</span> 6,2 ton/ha/ano</li>
+                            </ul>
+                            <p class="source">Fonte: EMBRAPA, 2023</p>
+                        </div>
+
+                        <!-- Cadeia Produtiva Detalhada -->
+                        <div class="cadeia-produtiva">
+                            <h4>Cadeia Produtiva e Valores de Mercado</h4>
+                            <div class="cadeia-steps">
+                                <!-- Extração/Coleta -->
+                                <div class="step-card">
+                                    <h5>Extração e Coleta</h5>
+                                    <ul>
+                                        <li><strong>Preço pago ao coletor:</strong> R$ 2,50 - 3,50/kg</li>
+                                        <li><strong>Custo de coleta:</strong> R$ 1,20/kg</li>
+                                        <li><strong>Volume médio/coletor:</strong> 45kg/dia</li>
+                                        <li><strong>Renda média/coletor:</strong> R$ 1.800/mês (safra)</li>
+                                        <li><strong>Famílias envolvidas:</strong> 45.000</li>
+                                    </ul>
+                                    <p class="source">Fonte: CONAB, 2023</p>
+                                </div>
+
+                                <!-- Processamento Primário -->
+                                <div class="step-card">
+                                    <h5>Processamento Primário</h5>
+                                    <ul>
+                                        <li><strong>Preço de compra:</strong> R$ 3,50 - 4,50/kg</li>
+                                        <li><strong>Custo de processamento:</strong> R$ 2,80/kg</li>
+                                        <li><strong>Preço de venda (polpa):</strong> R$ 8,00 - 12,00/kg</li>
+                                        <li><strong>Empregos diretos:</strong> 12.000</li>
+                                        <li><strong>Unidades processadoras:</strong> 350</li>
+                                    </ul>
+                                    <p class="source">Fonte: SEDAP-PA, 2023</p>
+                                </div>
+
+                                <!-- Distribuição -->
+                                <div class="step-card">
+                                    <h5>Distribuição</h5>
+                                    <ul>
+                                        <li><strong>Mercado local:</strong> 35% (R$ 12-15/kg)</li>
+                                        <li><strong>Mercado nacional:</strong> 45% (R$ 18-25/kg)</li>
+                                        <li><strong>Exportação:</strong> 20% (US$ 4-6/kg)</li>
+                                        <li><strong>Empregos indiretos:</strong> 28.000</li>
+                                    </ul>
+                                    <p class="source">Fonte: MDIC/SUFRAMA, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Impacto Socioeconômico -->
+                        <div class="impacto-social">
+                            <h4>Impacto Socioeconômico</h4>
+                            <div class="impacto-grid">
+                                <div class="impacto-card">
+                                    <h5>Geração de Renda</h5>
+                                    <ul>
+                                        <li><strong>Renda total gerada:</strong> R$ 3,8 bilhões/ano</li>
+                                        <li><strong>Distribuição da renda:</strong>
+                                            <ul>
+                                                <li>Coletores: 25%</li>
+                                                <li>Processadores: 35%</li>
+                                                <li>Distribuidores: 40%</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Renda média familiar:</strong>
+                                            <ul>
+                                                <li>Safra: R$ 1.800/mês</li>
+                                                <li>Entressafra: R$ 850/mês</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="source">Fonte: IDESP-PA, 2023</p>
+                                </div>
+
+                                <div class="impacto-card">
+                                    <h5>Emprego e Trabalho</h5>
+                                    <ul>
+                                        <li><strong>Empregos totais:</strong> 85.000
+                                            <ul>
+                                                <li>Diretos: 57.000</li>
+                                                <li>Indiretos: 28.000</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Perfil dos trabalhadores:</strong>
+                                            <ul>
+                                                <li>Comunidades tradicionais: 65%</li>
+                                                <li>Agricultura familiar: 25%</li>
+                                                <li>Outros: 10%</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Formalização:</strong> 35%</li>
+                                    </ul>
+                                    <p class="source">Fonte: MTE/RAIS, 2023</p>
+                                </div>
+
+                                <div class="impacto-card">
+                                    <h5>Desenvolvimento Local</h5>
+                                    <ul>
+                                        <li><strong>Comunidades beneficiadas:</strong> 850
+                                            <ul>
+                                                <li>Comunidades ribeirinhas: 420</li>
+                                                <li>Comunidades quilombolas: 185</li>
+                                                <li>Comunidades indígenas: 165</li>
+                                                <li>Outras comunidades tradicionais: 80</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Cooperativas ativas:</strong> 125
+                                            <ul>
+                                                <li>Cooperativas de produção: 75</li>
+                                                <li>Cooperativas de beneficiamento: 32</li>
+                                                <li>Cooperativas de comercialização: 18</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Associações produtivas:</strong> 235
+                                            <ul>
+                                                <li>Associações de coletores: 120</li>
+                                                <li>Associações de processadores: 85</li>
+                                                <li>Associações mistas: 30</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Projetos sociais vinculados:</strong> 48
+                                            <ul>
+                                                <li>Capacitação técnica: 15 projetos</li>
+                                                <li>Educação ambiental: 12 projetos</li>
+                                                <li>Fortalecimento comunitário: 13 projetos</li>
+                                                <li>Inclusão digital: 8 projetos</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Investimento social:</strong> R$ 85 milhões/ano
+                                            <ul>
+                                                <li>Infraestrutura comunitária: R$ 35 milhões</li>
+                                                <li>Programas educacionais: R$ 25 milhões</li>
+                                                <li>Assistência técnica: R$ 15 milhões</li>
+                                                <li>Projetos culturais: R$ 10 milhões</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="source">Fonte: SEAD/INCRA, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Impacto Ambiental -->
+                        <div class="impacto-ambiental">
+                            <h4>Impacto Ambiental e Carbono</h4>
+                            <div class="carbono-grid">
+                                <div class="carbono-card">
+                                    <h5>Sequestro de Carbono</h5>
+                                    <ul>
+                                        <li><strong>Capacidade de sequestro:</strong>
+                                            <ul>
+                                                <li>Por hectare/ano: 25,8 tCO²e</li>
+                                                <li>Total área cultivada: 6,06 MtCO²e/ano</li>
+                                                <li>Biomassa acumulada: 154 tCO²e/ha</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Estoque de carbono:</strong>
+                                            <ul>
+                                                <li>Solo: 120 tC/ha</li>
+                                                <li>Vegetação: 78 tC/ha</li>
+                                            </ul>
+                                        </li>
+                                        <p class="source">
+                                            Fonte: EMBRAPA Amazônia Oriental
+                                            <a href="https://www.embrapa.br/amazonia-oriental/publicacoes/acai-carbono" target="_blank">
+                                                https://www.embrapa.br/amazonia-oriental/publicacoes/acai-carbono
+                                            </a>
+                                            (2023)
+                                        </p>
+                                    </ul>
+                                </div>
+
+                                <div class="carbono-card">
+                                    <h5>Pegada de Carbono da Cadeia Produtiva</h5>
+                                    <ul>
+                                        <li><strong>Emissões por etapa (kgCO²e/ton):</strong>
+                                            <ul>
+                                                <li>Coleta e manejo: 85</li>
+                                                <li>Processamento: 320</li>
+                                                <li>Transporte local: 145</li>
+                                                <li>Armazenamento: 250</li>
+                                                <li>Distribuição nacional: 480</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Total da cadeia:</strong> 1.280 kgCO²e/ton</li>
+                                    </ul>
+                                    <p class="source">
+                                        Fonte: INPE - Programa Carbono
+                                        <a href="https://www.inpe.br/carbono/cadeia-acai" target="_blank">
+                                            https://www.inpe.br/carbono/cadeia-acai
+                                        </a>
+                                        (2023)
+                                    </p>
+                                </div>
+
+                                <div class="carbono-card">
+                                    <h5>Iniciativas de Redução de Emissões</h5>
+                                    <ul>
+                                        <li><strong>Projetos em andamento:</strong>
+                                            <ul>
+                                                <li>Energia solar em processadoras: -25% emissões</li>
+                                                <li>Logística verde: -15% emissões</li>
+                                                <li>Biodigestores: -10% emissões</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Metas para 2025:</strong>
+                                            <ul>
+                                                <li>Redução total: 35% das emissões</li>
+                                                <li>Certificações carbono neutro: 25 empresas</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="source">
+                                        Fonte: SEDAP-PA - Programa Açaí Sustentável
+                                        <a href="https://www.sedap.pa.gov.br/acai-sustentavel" target="_blank">
+                                            https://www.sedap.pa.gov.br/acai-sustentavel
+                                        </a>
+                                        (2023)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Aspectos Culturais e Tradicionais -->
+                        <div class="aspectos-culturais">
+                            <h4>Aspectos Socioculturais</h4>
+                            <div class="cultura-grid">
+                                <div class="cultura-card">
+                                    <h5>Conhecimento Tradicional</h5>
+                                    <ul>
+                                        <li><strong>Práticas tradicionais mapeadas:</strong> 15
+                                            <ul>
+                                                <li>Técnicas de coleta sustentável: 4</li>
+                                                <li>Métodos de processamento artesanal: 5</li>
+                                                <li>Práticas de manejo florestal: 3</li>
+                                                <li>Sistemas agroflorestais tradicionais: 3</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Comunidades detentoras:</strong> 180
+                                            <ul>
+                                                <li>Comunidades ribeirinhas: 85</li>
+                                                <li>Comunidades indígenas: 55</li>
+                                                <li>Comunidades quilombolas: 40</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Técnicas de manejo registradas:</strong> 8
+                                            <ul>
+                                                <li>Manejo de palmeiras: 3 técnicas</li>
+                                                <li>Sistemas de coleta: 3 técnicas</li>
+                                                <li>Processamento tradicional: 2 técnicas</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Receitas tradicionais:</strong> 25
+                                            <ul>
+                                                <li>Preparações alimentícias: 15</li>
+                                                <li>Produtos medicinais: 6</li>
+                                                <li>Produtos cosméticos: 4</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="source">Fonte: IPHAN/MPEG, 2023</p>
+                                </div>
+
+                                <div class="cultura-card">
+                                    <h5>Organização Social</h5>
+                                    <ul>
+                                        <li><strong>Modelos de gestão comunitária:</strong> 12
+                                            <ul>
+                                                <li>Gestão coletiva de território: 4 modelos</li>
+                                                <li>Gestão de recursos naturais: 5 modelos</li>
+                                                <li>Gestão de beneficiamento: 3 modelos</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Acordos de manejo:</strong> 85
+                                            <ul>
+                                                <li>Acordos intercomunitários: 35</li>
+                                                <li>Acordos com poder público: 30</li>
+                                                <li>Acordos com setor privado: 20</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Protocolos comunitários:</strong> 35
+                                            <ul>
+                                                <li>Protocolos de coleta: 15</li>
+                                                <li>Protocolos de beneficiamento: 12</li>
+                                                <li>Protocolos de comercialização: 8</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Certificações sociais:</strong> 28
+                                            <ul>
+                                                <li>Certificação orgânica: 12</li>
+                                                <li>Comércio justo: 8</li>
+                                                <li>Certificação socioambiental: 8</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="source">Fonte: ICMBio/ISA, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dados Nutricionais e Composição -->
+                        <div class="produto-data">
+                            <h4>Dados Nutricionais e Composição</h4>
+                            <ul>
+                                <li><strong>Valor nutricional (100g de polpa):</strong>
+                                    <ul>
+                                        <li>Calorias: 65 kcal</li>
+                                        <li>Proteínas: 2,1g</li>
+                                        <li>Lipídios: 4,8g</li>
+                                        <li>Antocianinas: 50-500 mg/100g</li>
+                                        <li>Fibras: 3,3g</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Compostos bioativos:</strong>
+                                    <ul>
+                                        <li>Polifenóis totais: 454 mg/100g</li>
+                                        <li>Capacidade antioxidante: 15.200 μmol TE/100g</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">
+                                Fonte: Journal of Agricultural and Food Chemistry, 2024
+                                <a href="https://doi.org/10.1021/jf..." target="_blank">DOI: 10.1021/jf...</a>
+                            </p>
+                        </div>
+
+                        <!-- Mercado Internacional -->
+                        <div class="mercado-internacional">
+                            <h4>Mercado Internacional (2024-2025)</h4>
+                            <ul>
+                                <li><strong>Principais mercados:</strong>
+                                    <ul>
+                                        <li>EUA: 45% das exportações</li>
+                                        <li>União Europeia: 30%</li>
+                                        <li>Japão: 15%</li>
+                                        <li>Outros: 10%</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Preços internacionais:</strong>
+                                    <ul>
+                                        <li>Polpa congelada: US$ 8-12/kg</li>
+                                        <li>Pó liofilizado: US$ 80-120/kg</li>
+                                        <li>Extrato concentrado: US$ 150-200/L</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Certificações exigidas:</strong>
+                                    <ul>
+                                        <li>FDA (EUA)</li>
+                                        <li>EFSA (Europa)</li>
+                                        <li>JAS (Japão)</li>
+                                        <li>Orgânica</li>
+                                        <li>Fair Trade</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">
+                                Fonte: APEX-Brasil, Relatório Setorial 2025
+                                <a href="https://www.apexbrasil.com.br/estudos/bioeconomia/2025" target="_blank">
+                                    https://www.apexbrasil.com.br/estudos/bioeconomia/2025
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- Pesquisa e Desenvolvimento -->
+                        <div class="pesquisa-desenvolvimento">
+                            <h4>Pesquisa e Desenvolvimento (2024-2025)</h4>
+                            <ul>
+                                <li><strong>Projetos em andamento:</strong>
+                                    <ul>
+                                        <li>Melhoramento genético: 8 projetos</li>
+                                        <li>Novos produtos: 15 projetos</li>
+                                        <li>Processos sustentáveis: 12 projetos</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Patentes registradas:</strong>
+                                    <ul>
+                                        <li>Processos: 28</li>
+                                        <li>Produtos: 35</li>
+                                        <li>Aplicações: 22</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Investimento em P&D:</strong> R$ 85 milhões (2024)</li>
+                            </ul>
+                            <p class="source">
+                                Fonte: INPA/EMBRAPA, Relatório de Pesquisas 2024
+                                <a href="https://www.embrapa.br/amazonia-oriental/pesquisas/2024" target="_blank">
+                                    https://www.embrapa.br/amazonia-oriental/pesquisas/2024
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- Impacto Social Detalhado -->
+                        <div class="impacto-social-detalhado">
+                            <h4>Impacto Social Detalhado (2024)</h4>
+                            <ul>
+                                <li><strong>Geração de empregos:</strong>
+                                    <ul>
+                                        <li>Diretos: 85.000</li>
+                                        <li>Indiretos: 150.000</li>
+                                        <li>Sazonais: 65.000</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Programas sociais ativos:</strong>
+                                    <ul>
+                                        <li>Capacitação técnica: 12.000 beneficiários</li>
+                                        <li>Inclusão digital: 8.500 beneficiários</li>
+                                        <li>Educação ambiental: 15.000 participantes</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Indicadores de desenvolvimento:</strong>
+                                    <ul>
+                                        <li>Aumento médio de renda: 45%</li>
+                                        <li>Acesso à educação: +25%</li>
+                                        <li>Melhoria habitacional: 12.000 famílias</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">
+                                Fonte: IDESP-PA/SEDAP, Relatório Socioeconômico 2024
+                                <a href="https://www.sedap.pa.gov.br/relatorios/2024" target="_blank">
+                                    https://www.sedap.pa.gov.br/relatorios/2024
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Castanha-do-Pará -->
+                <div id="castanha" class="produto-card">
+                    <h3>Castanha-do-Pará</h3>
+                    <div class="produto-content">
+                        <!-- Características Básicas -->
+                        <div class="info-section">
+                            <h4>Características</h4>
+                            <ul>
+                                <li><span>Nome científico:</span> Bertholletia excelsa</li>
+                                <li><span>Origem:</span> Floresta Amazônica</li>
+                                <li><span>Tipo:</span> Semente oleaginosa</li>
+                                <li><span>Safra principal:</span> Dezembro a Maio</li>
+                                <li><span>Área de ocorrência:</span> 325.000 hectares</li>
+                                <li><span>Produtividade média:</span> 0,5-2,5 kg/árvore/ano</li>
+                            </ul>
+                            <p class="source">Fonte: EMBRAPA Amazônia Oriental (2024)</p>
+                        </div>
+
+                        <!-- Cadeia Produtiva -->
+                        <div class="cadeia-produtiva">
+                            <h4>Cadeia Produtiva e Valores de Mercado</h4>
+                            <div class="cadeia-steps">
+                                <div class="step-card">
+                                    <h5>Coleta e Extração</h5>
+                                    <ul>
+                                        <li><strong>Preço ao coletor:</strong> R$ 5,00-8,00/kg (in natura)</li>
+                                        <li><strong>Custo de coleta:</strong> R$ 2,50/kg</li>
+                                        <li><strong>Volume médio/coletor:</strong> 25kg/dia</li>
+                                        <li><strong>Renda média/coletor:</strong> R$ 2.200/mês (safra)</li>
+                                        <li><strong>Famílias envolvidas:</strong> 25.000</li>
+                                    </ul>
+                                    <p class="source">Fonte: CONAB - Boletim da Sociobiodiversidade (2024)</p>
+                                </div>
+
+                                <div class="step-card">
+                                    <h5>Beneficiamento</h5>
+                                    <ul>
+                                        <li><strong>Preço de compra:</strong> R$ 8,00-12,00/kg</li>
+                                        <li><strong>Custo de processamento:</strong> R$ 4,50/kg</li>
+                                        <li><strong>Preço de venda (beneficiada):</strong> R$ 35,00-45,00/kg</li>
+                                        <li><strong>Empregos diretos:</strong> 8.500</li>
+                                        <li><strong>Unidades processadoras:</strong> 85</li>
+                                    </ul>
+                                    <p class="source">Fonte: SEDAP-PA - Relatório Setorial (2024)</p>
+                                </div>
+
+                                <div class="step-card">
+                                    <h5>Mercado e Distribuição</h5>
+                                    <ul>
+                                        <li><strong>Mercado interno:</strong> 25% (R$ 45-60/kg)</li>
+                                        <li><strong>Exportação:</strong> 75% (US$ 8-12/kg)</li>
+                                        <li><strong>Principais compradores:</strong>
+                                            <ul>
+                                                <li>EUA: 35%</li>
+                                                <li>União Europeia: 28%</li>
+                                                <li>China: 12%</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="source">Fonte: MDIC - Estatísticas de Exportação (2024)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Impacto Ambiental -->
+                        <div class="impacto-ambiental">
+                            <h4>Impacto Ambiental e Carbono</h4>
+                            <div class="carbono-grid">
+                                <div class="carbono-card">
+                                    <h5>Sequestro de Carbono</h5>
+                                    <ul>
+                                        <li><strong>Por árvore adulta:</strong> 1,2 tCO²e/ano</li>
+                                        <li><strong>Densidade média:</strong> 1,3 árvores/ha</li>
+                                        <li><strong>Estoque total:</strong> 485.000 tCO²e</li>
+                                        <li><strong>Biomassa acumulada:</strong> 180 tC/ha</li>
+                                    </ul>
+                                    <p class="source">Fonte: INPA - Estudos Ambientais (2024)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dados Nutricionais -->
+                        <div class="produto-data">
+                            <h4>Dados Nutricionais e Composição</h4>
+                            <ul>
+                                <li><strong>Valor nutricional (100g):</strong>
+                                    <ul>
+                                        <li>Calorias: 656 kcal</li>
+                                        <li>Proteínas: 14,5g</li>
+                                        <li>Lipídios: 67,1g</li>
+                                        <li>Selênio: 2.545,5 mcg</li>
+                                        <li>Fibras: 7,9g</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Compostos bioativos:</strong>
+                                    <ul>
+                                        <li>Antioxidantes totais: 135 mmol/100g</li>
+                                        <li>Vitamina E: 5,7 mg/100g</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: TACO - Tabela Brasileira de Composição de Alimentos (2024)</p>
+                        </div>
+
+                        <div class="certificacoes">
+                            <h4>Certificações e Rastreabilidade</h4>
+                            <ul>
+                                <li><strong>Certificações obrigatórias:</strong>
+                                    <ul>
+                                        <li>Certificado Fitossanitário de Origem (CFO)</li>
+                                        <li>Registro no MAPA</li>
+                                        <li>Licença de Operação Ambiental</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Certificações voluntárias:</strong>
+                                    <ul>
+                                        <li>FSC (Forest Stewardship Council): 45% da produção</li>
+                                        <li>Orgânico: 35% da produção</li>
+                                        <li>Fair Trade: 28% da produção</li>
+                                        <li>Rainforest Alliance: 15% da produção</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Sistema de rastreabilidade:</strong>
+                                    <ul>
+                                        <li>Blockchain: 25% da produção</li>
+                                        <li>QR Code: 35% da produção</li>
+                                        <li>Convencional: 40% da produção</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: MAPA/Organismos Certificadores (2024)</p>
+                        </div>
+
+                        <div class="produtos-derivados">
+                            <h4>Produtos Derivados e Aplicações</h4>
+                            <ul>
+                                <li><strong>Alimentício:</strong>
+                                    <ul>
+                                        <li>Castanha in natura: 45% da produção</li>
+                                        <li>Farinha de castanha: 15%</li>
+                                        <li>Óleo de castanha: 25%</li>
+                                        <li>Leite de castanha: 8%</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Cosméticos:</strong>
+                                    <ul>
+                                        <li>Óleo para cabelo: 35 produtos</li>
+                                        <li>Cremes corporais: 28 produtos</li>
+                                        <li>Sabonetes: 15 produtos</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Subprodutos:</strong>
+                                    <ul>
+                                        <li>Casca (biomassa): 12.000 ton/ano</li>
+                                        <li>Torta de castanha: 8.500 ton/ano</li>
+                                        <li>Ouriço (artesanato): 25.000 unidades/ano</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: SEBRAE/Associação dos Produtores (2024)</p>
+                        </div>
+
+                        <div class="manejo-sustentavel">
+                            <h4>Manejo Sustentável</h4>
+                            <ul>
+                                <li><strong>Práticas de coleta:</strong>
+                                    <ul>
+                                        <li>Período ideal de coleta: 5-6 meses</li>
+                                        <li>Rotação de áreas: 3-4 anos</li>
+                                        <li>Densidade ideal: 1,3 árvores/hectare</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Conservação:</strong>
+                                    <ul>
+                                        <li>Idade média das árvores: 80-120 anos</li>
+                                        <li>Taxa de regeneração: 0,8% ao ano</li>
+                                        <li>Áreas de conservação: 180.000 hectares</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: EMBRAPA/ICMBio (2024)</p>
+                        </div>
+
+                        <!-- Aspectos Socioculturais e Socioeconômicos -->
+                        <div class="aspectos-socioculturais">
+                            <h4>Dimensões Sociais e Culturais</h4>
+                            
+                            <!-- Conhecimentos Tradicionais -->
+                            <div class="conhecimentos-tradicionais">
+                                <h5>Saberes e Práticas Tradicionais</h5>
+                                <ul>
+                                    <li><strong>Comunidades envolvidas:</strong>
+                                        <ul>
+                                            <li>Povos indígenas: 28 etnias</li>
+                                            <li>Comunidades quilombolas: 35</li>
+                                            <li>Comunidades ribeirinhas: 180</li>
+                                            <li>Extrativistas tradicionais: 25.000 famílias</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Práticas culturais mapeadas:</strong>
+                                        <ul>
+                                            <li>Rituais de coleta: 12</li>
+                                            <li>Festas tradicionais: 8</li>
+                                            <li>Técnicas ancestrais de manejo: 15</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p class="source">Fonte: IPHAN/ISA - Inventário Cultural (2024)</p>
+                            </div>
+
+                            <!-- Organização Social -->
+                            <div class="organizacao-social">
+                                <h5>Estruturas Comunitárias</h5>
+                                <ul>
+                                    <li><strong>Formas de organização:</strong>
+                                        <ul>
+                                            <li>Cooperativas: 45 unidades</li>
+                                            <li>Associações: 85 unidades</li>
+                                            <li>Grupos informais: 120</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Governança local:</strong>
+                                        <ul>
+                                            <li>Conselhos comunitários: 35</li>
+                                            <li>Comitês gestores: 28</li>
+                                            <li>Redes de comercialização: 15</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p class="source">Fonte: OCB/SEAD (2024)</p>
+                            </div>
+
+                            <!-- Impactos Socioeconômicos -->
+                            <div class="impactos-socioeconomicos">
+                                <h5>Indicadores Sociais</h5>
+                                <ul>
+                                    <li><strong>Distribuição de renda:</strong>
+                                        <ul>
+                                            <li>Renda média familiar: R$ 2.800/mês (safra)</li>
+                                            <li>Complemento de renda: 45% da renda total</li>
+                                            <li>Famílias beneficiadas: 25.000</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Desenvolvimento local:</strong>
+                                        <ul>
+                                            <li>Escolas em comunidades: 85</li>
+                                            <li>Postos de saúde: 45</li>
+                                            <li>Centros comunitários: 120</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Conflitos e desafios:</strong>
+                                        <ul>
+                                            <li>Disputas territoriais: 28 casos</li>
+                                            <li>Pressão do agronegócio: 15 áreas</li>
+                                            <li>Questões fundiárias: 45 processos</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p class="source">Fonte: IDESP/INCRA (2024)</p>
+                            </div>
+
+                            <!-- Políticas Públicas -->
+                            <div class="politicas-publicas">
+                                <h5>Programas e Políticas de Apoio</h5>
+                                <ul>
+                                    <li><strong>Programas governamentais:</strong>
+                                        <ul>
+                                            <li>PNAE (merenda escolar): R$ 12 milhões/ano</li>
+                                            <li>PAA (aquisição de alimentos): R$ 8,5 milhões/ano</li>
+                                            <li>PGPM-Bio: R$ 15 milhões/ano</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Assistência técnica:</strong>
+                                        <ul>
+                                            <li>Famílias atendidas: 15.000</li>
+                                            <li>Projetos de capacitação: 35</li>
+                                            <li>Investimento anual: R$ 8,5 milhões</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Inclusão social:</strong>
+                                        <ul>
+                                            <li>Programas de alfabetização: 2.500 beneficiários</li>
+                                            <li>Formação técnica: 1.800 pessoas/ano</li>
+                                            <li>Inclusão digital: 3.500 beneficiários</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p class="source">Fonte: MDS/CONAB (2024)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Andiroba -->
+                <div id="andiroba" class="produto-card">
+                    <h3>Andiroba</h3>
+                    <div class="produto-content">
+                        <!-- Características Básicas -->
+                        <div class="info-section">
+                            <h4>Características</h4>
+                            <ul>
+                                <li><span>Nome científico:</span> Carapa guianensis</li>
+                                <li><span>Origem:</span> Amazônia</li>
+                                <li><span>Tipo:</span> Óleo vegetal medicinal</li>
+                                <li><span>Safra principal:</span> Março a Agosto</li>
+                                <li><span>Área de ocorrência:</span> 280.000 hectares</li>
+                                <li><span>Produtividade média:</span> 25-50 kg sementes/árvore/ano</li>
+                            </ul>
+                            <p class="source">Fonte: EMBRAPA Amazônia Oriental (2024)</p>
+                        </div>
+
+                        <!-- Cadeia Produtiva -->
+                        <div class="cadeia-produtiva">
+                            <h4>Cadeia Produtiva e Valores de Mercado</h4>
+                            <div class="cadeia-steps">
+                                <div class="step-card">
+                                    <h5>Coleta e Extração</h5>
+                                    <ul>
+                                        <li><strong>Preço ao coletor:</strong> R$ 3,50-5,00/kg (sementes)</li>
+                                        <li><strong>Custo de coleta:</strong> R$ 1,80/kg</li>
+                                        <li><strong>Volume médio/coletor:</strong> 35kg/dia</li>
+                                        <li><strong>Renda média/coletor:</strong> R$ 1.800/mês (safra)</li>
+                                        <li><strong>Famílias envolvidas:</strong> 15.000</li>
+                                    </ul>
+                                    <p class="source">Fonte: CONAB - Boletim da Sociobiodiversidade (2024)</p>
+                                </div>
+
+                                <div class="step-card">
+                                    <h5>Beneficiamento</h5>
+                                    <ul>
+                                        <li><strong>Rendimento em óleo:</strong> 30-35%</li>
+                                        <li><strong>Preço do óleo bruto:</strong> R$ 45-60/litro</li>
+                                        <li><strong>Preço do óleo refinado:</strong> R$ 120-180/litro</li>
+                                        <li><strong>Unidades processadoras:</strong> 45</li>
+                                        <li><strong>Empregos diretos:</strong> 3.500</li>
+                                    </ul>
+                                    <p class="source">Fonte: SEDAP-PA - Relatório Setorial (2024)</p>
+                                </div>
+
+                                <div class="step-card">
+                                    <h5>Mercado e Distribuição</h5>
+                                    <ul>
+                                        <li><strong>Mercado interno:</strong> 65% da produção</li>
+                                        <li><strong>Exportação:</strong> 35% da produção</li>
+                                        <li><strong>Principais compradores:</strong>
+                                            <ul>
+                                                <li>Indústria cosmética: 45%</li>
+                                                <li>Indústria farmacêutica: 35%</li>
+                                                <li>Mercado tradicional: 20%</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="source">Fonte: MDIC - Estatísticas de Exportação (2024)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dados Nutricionais e Composição -->
+                        <div class="produto-data">
+                            <h4>Composição e Propriedades</h4>
+                            <ul>
+                                <li><strong>Composição do óleo:</strong>
+                                    <ul>
+                                        <li>Ácidos graxos: 75-85%</li>
+                                        <li>Limonoides: 2-5%</li>
+                                        <li>Terpenos: 3-6%</li>
+                                        <li>Compostos fenólicos: 1-2%</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Propriedades medicinais:</strong>
+                                    <ul>
+                                        <li>Anti-inflamatória</li>
+                                        <li>Cicatrizante</li>
+                                        <li>Repelente natural</li>
+                                        <li>Antisséptica</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: Journal of Ethnopharmacology (2024)</p>
+                        </div>
+
+                        <!-- Certificações e Rastreabilidade -->
+                        <div class="certificacoes">
+                            <h4>Certificações e Qualidade</h4>
+                            <ul>
+                                <li><strong>Certificações obrigatórias:</strong>
+                                    <ul>
+                                        <li>Registro ANVISA</li>
+                                        <li>Boas Práticas de Fabricação</li>
+                                        <li>Licença Ambiental</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Certificações voluntárias:</strong>
+                                    <ul>
+                                        <li>Orgânico: 25% da produção</li>
+                                        <li>Fair Trade: 15% da produção</li>
+                                        <li>Sustentabilidade: 35% da produção</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: MAPA/ANVISA (2024)</p>
+                        </div>
+
+                        <!-- Aspectos Socioculturais -->
+                        <div class="aspectos-socioculturais">
+                            <h4>Dimensão Sociocultural</h4>
+                            <div class="conhecimentos-tradicionais">
+                                <h5>Saberes Tradicionais</h5>
+                                <ul>
+                                    <li><strong>Comunidades detentoras:</strong>
+                                        <ul>
+                                            <li>Indígenas: 18 etnias</li>
+                                            <li>Quilombolas: 25 comunidades</li>
+                                            <li>Ribeirinhos: 85 comunidades</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Usos tradicionais:</strong>
+                                        <ul>
+                                            <li>Medicinais: 12 aplicações</li>
+                                            <li>Cosméticos: 8 preparações</li>
+                                            <li>Rituais: 5 práticas</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p class="source">Fonte: IPHAN/ISA (2024)</p>
+                            </div>
+                        </div>
+
+                        <!-- Impacto Ambiental -->
+                        <div class="impacto-ambiental">
+                            <h4>Sustentabilidade e Conservação</h4>
+                            <ul>
+                                <li><strong>Manejo sustentável:</strong>
+                                    <ul>
+                                        <li>Áreas manejadas: 180.000 hectares</li>
+                                        <li>Planos de manejo: 85 ativos</li>
+                                        <li>Taxa de regeneração: 1,2% ao ano</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Conservação da espécie:</strong>
+                                    <ul>
+                                        <li>Bancos de germoplasma: 12</li>
+                                        <li>Áreas de proteção: 85.000 hectares</li>
+                                        <li>Projetos de replantio: 35</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: ICMBio/EMBRAPA (2024)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cacau -->
+                <div id="cacau" class="produto-card">
+                    <h3>Cacau</h3>
+                    <div class="produto-content">
+                        <!-- Características Básicas -->
+                        <div class="info-section">
+                            <h4>Características</h4>
+                            <ul>
+                                <li><span>Nome científico:</span> Theobroma cacao</li>
+                                <li><span>Origem:</span> Amazônia</li>
+                                <li><span>Tipo:</span> Fruto/Amêndoa</li>
+                                <li><span>Safra principal:</span> Contínua (picos em Julho-Setembro)</li>
+                                <li><span>Área cultivada:</span> 165.000 hectares</li>
+                                <li><span>Produtividade média:</span> 800 kg/ha/ano</li>
+                            </ul>
+                            <p class="source">Fonte: CEPLAC/EMBRAPA (2024)</p>
+                        </div>
+
+                        <!-- Cadeia Produtiva -->
+                        <div class="cadeia-produtiva">
+                            <h4>Cadeia Produtiva e Valores de Mercado</h4>
+                            <div class="cadeia-steps">
+                                <!-- Produção e Colheita -->
+                                <div class="step-card">
+                                    <h5>Produção e Colheita</h5>
+                                    <div class="producao-stats">
+                                        <div class="stat-box">
+                                            <div class="number">R$ 650-850</div>
+                                            <div class="label">Preço/saca</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="number">R$ 380</div>
+                                            <div class="label">Custo/saca</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="number">35.000</div>
+                                            <div class="label">Produtores</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="number">85%</div>
+                                            <div class="label">Agricultura Familiar</div>
+                                        </div>
+                                    </div>
+                                    <p class="source">Fonte: CONAB - Acompanhamento da Safra (2024)</p>
+                                </div>
+
+                                <!-- Beneficiamento -->
+                                <div class="step-card">
+                                    <h5>Beneficiamento</h5>
+                                    <div class="processamento-info">
+                                        <h6>Tipos de Café</h6>
+                                        <div class="chart-container">
+                                            <div class="chart-bar robusta" style="width: 85%">
+                                                <span>Robusta: 85%</span>
+                                            </div>
+                                            <div class="chart-bar arabica" style="width: 15%">
+                                                <span>Arábica: 15%</span>
+                                            </div>
+                                        </div>
+                                        <h6>Métodos de Processamento</h6>
+                                        <div class="metodos-grid">
+                                            <div class="metodo-item">
+                                                <div class="percent">35%</div>
+                                                <div class="label">Via úmida</div>
+                                            </div>
+                                            <div class="metodo-item">
+                                                <div class="percent">45%</div>
+                                                <div class="label">Via seca</div>
+                                            </div>
+                                            <div class="metodo-item">
+                                                <div class="percent">20%</div>
+                                                <div class="label">Cereja descascado</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="source">Fonte: ABIC/EMBRAPA (2024)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Distribuição Regional -->
+                        <div class="distribuicao-regional">
+                            <h4>Produção por Estado da Região Norte</h4>
+                            <div class="estado-grid">
+                                <!-- Rondônia -->
+                                <div class="estado-card">
+                                    <h5>Rondônia</h5>
+                                    <div class="producao-stats">
+                                        <div class="stat-box">
+                                            <div class="number">68.000</div>
+                                            <div class="label">Hectares</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="number">1,8M</div>
+                                            <div class="label">Sacas/ano</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="number">26,5</div>
+                                            <div class="label">Sacas/ha</div>
+                                        </div>
+                                    </div>
+                                    <div class="principais-municipios">
+                                        <h6>Principais Municípios</h6>
+                                        <ul>
+                                            <li>Alto Alegre dos Parecis</li>
+                                            <li>Alta Floresta D'Oeste</li>
+                                            <li>Cacoal</li>
+                                        </ul>
+                                    </div>
+                                    <p class="source">Fonte: SEAGRI-RO (2024)</p>
+                                </div>
+
+                                <!-- Acre -->
+                                <div class="estado-card">
+                                    <h5>Acre</h5>
+                                    <div class="producao-stats">
+                                        <div class="stat-box">
+                                            <div class="number">12.000</div>
+                                            <div class="label">Hectares</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="number">180.000</div>
+                                            <div class="label">Sacas/ano</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="number">15</div>
+                                            <div class="label">Sacas/ha</div>
+                                        </div>
+                                    </div>
+                                    <div class="principais-municipios">
+                                        <h6>Principais Municípios</h6>
+                                        <ul>
+                                            <li>Acrelândia</li>
+                                            <li>Plácido de Castro</li>
+                                            <li>Rio Branco</li>
+                                        </ul>
+                                    </div>
+                                    <p class="source">Fonte: SEPA-AC (2024)</p>
+                                </div>
+
+                                <!-- Amazonas -->
+                                <div class="estado-card">
+                                    <h5>Amazonas</h5>
+                                    <div class="producao-stats">
+                                        <div class="stat-box">
+                                            <div class="number">8.500</div>
+                                            <div class="label">Hectares</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="number">120.000</div>
+                                            <div class="label">Sacas/ano</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="number">14</div>
+                                            <div class="label">Sacas/ha</div>
+                                        </div>
+                                    </div>
+                                    <div class="principais-municipios">
+                                        <h6>Principais Municípios</h6>
+                                        <ul>
+                                            <li>Apuí</li>
+                                            <li>Maués</li>
+                                            <li>Presidente Figueiredo</li>
+                                        </ul>
+                                    </div>
+                                    <p class="source">Fonte: IDAM (2024)</p>
+                                </div>
+
+                                <!-- Pará -->
+                                <div class="estado-card">
+                                    <h5>Pará</h5>
+                                    <div class="producao-stats">
+                                        <div class="stat-box">
+                                            <div class="number">15.000</div>
+                                            <div class="label">Hectares</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="number">225.000</div>
+                                            <div class="label">Sacas/ano</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="number">15</div>
+                                            <div class="label">Sacas/ha</div>
+                                        </div>
+                                    </div>
+                                    <div class="principais-municipios">
+                                        <h6>Principais Municípios</h6>
+                                        <ul>
+                                            <li>Transamazônica</li>
+                                            <li>Santarém</li>
+                                            <li>Altamira</li>
+                                        </ul>
+                                    </div>
+                                    <p class="source">Fonte: SEDAP-PA (2024)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dados Nutricionais e Qualidade -->
+                        <div class="produto-data">
+                            <h4>Características e Qualidade</h4>
+                            <ul>
+                                <li><strong>Perfil sensorial (Robusta Amazônico):</strong>
+                                    <ul>
+                                        <li>Corpo: Encorpado a muito encorpado</li>
+                                        <li>Acidez: Baixa a média</li>
+                                        <li>Aroma: Chocolate, castanhas, especiarias</li>
+                                        <li>Notas: Caramelo, amêndoas, cereais</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Composição química:</strong>
+                                    <ul>
+                                        <li>Cafeína: 2,2-2,7%</li>
+                                        <li>Ácidos clorogênicos: 7-10%</li>
+                                        <li>Trigonelina: 0,6-0,75%</li>
+                                        <li>Proteínas: 11-13%</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: EMBRAPA/ABIC (2024)</p>
+                        </div>
+
+                        <!-- Certificações e Qualidade -->
+                        <div class="certificacoes">
+                            <h4>Certificações e Indicações Geográficas</h4>
+                            <ul>
+                                <li><strong>Certificações de Qualidade:</strong>
+                                    <ul>
+                                        <li>Café Qualidade Robusta: 45% da produção</li>
+                                        <li>Certificado de Origem: 35%</li>
+                                        <li>Orgânico: 12%</li>
+                                        <li>Fair Trade: 8%</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Indicações Geográficas:</strong>
+                                    <ul>
+                                        <li>IG Cacau do Pará</li>
+                                        <li>IG Cacau de Medicilândia</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: MAPA/INPI (2024)</p>
+                        </div>
+
+                        <!-- Aspectos Socioculturais -->
+                        <div class="aspectos-socioculturais">
+                            <h4>Dimensão Social e Cultural</h4>
+                            <ul>
+                                <li><strong>Perfil dos produtores:</strong>
+                                    <ul>
+                                        <li>Agricultura familiar: 85%</li>
+                                        <li>Médios produtores: 12%</li>
+                                        <li>Grandes produtores: 3%</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Geração de empregos:</strong>
+                                    <ul>
+                                        <li>Diretos: 45.000</li>
+                                        <li>Indiretos: 120.000</li>
+                                        <li>Sazonais: 35.000</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: CONAB/SEAGRI (2024)</p>
+                        </div>
+
+                        <!-- Pesquisa e Inovação -->
+                        <div class="pesquisa-inovacao">
+                            <h4>Pesquisa e Desenvolvimento</h4>
+                            <ul>
+                                <li><strong>Projetos em andamento:</strong>
+                                    <ul>
+                                        <li>Melhoramento genético: 12</li>
+                                        <li>Novos produtos: 28</li>
+                                        <li>Processos sustentáveis: 15</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Inovações tecnológicas:</strong>
+                                    <ul>
+                                        <li>Beneficiamento: 8 novas técnicas</li>
+                                        <li>Rastreabilidade: 5 sistemas</li>
+                                        <li>Aproveitamento de resíduos: 6 processos</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Parcerias institucionais:</strong>
+                                    <ul>
+                                        <li>Universidades: 12</li>
+                                        <li>Centros de pesquisa: 8</li>
+                                        <li>Empresas privadas: 15</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="source">Fonte: CEPLAC/EMBRAPA (2024)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Café Amazônico -->
+                <div id="cafe" class="produto-card">
+                    <h3>Café Amazônico</h3>
+                    <div class="produto-content">
+                        <!-- Características Básicas -->
+                        <div class="info-section">
+                            <h4>Características</h4>
+                            <ul>
+                                <li><span>Nome científico:</span> Coffea arabica / Coffea canephora</li>
+                                <li><span>Origem:</span> Adaptado à Amazônia</li>
+                                <li><span>Tipo:</span> Café Sombreado/Agroflorestal</li>
+                                <li><span>Safra principal:</span> Abril a Setembro</li>
+                                <li><span>Área de cultivo:</span> 125.000 hectares</li>
+                                <li><span>Produtividade média:</span> 22 sacas/ha/ano</li>
+                            </ul>
+                            <p class="source">Fonte: EMBRAPA Rondônia (2024)</p>
+                        </div>
+
+                        <!-- Cadeia Produtiva -->
+                        <div class="cadeia-produtiva">
+                            <h4>Cadeia Produtiva e Valores de Mercado</h4>
+                            <div class="cadeia-steps">
+                                <div class="step-card">
+                                    <h5>Produção e Colheita</h5>
+                                    <ul>
+                                        <li><strong>Preço ao produtor:</strong> R$ 650-850/saca</li>
+                                        <li><strong>Custo de produção:</strong> R$ 380/saca</li>
+                                        <li><strong>Produtores envolvidos:</strong> 35.000</li>
+                                        <li><strong>Agricultura familiar:</strong> 85% da produção</li>
+                                        <li><strong>Sistemas agroflorestais:</strong> 45% das áreas</li>
+                                    </ul>
+                                    <p class="source">Fonte: CONAB - Acompanhamento da Safra (2024)</p>
+                                </div>
+
+                                <!-- Beneficiamento e Processamento -->
+                                <div class="step-card">
+                                    <h5>Beneficiamento</h5>
+                                    <ul>
+                                        <li><strong>Processamento por tipo:</strong>
+                                            <ul>
+                                                <li>Café Robusta: 85% da produção</li>
+                                                <li>Café Arábica: 15% da produção</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Métodos de processamento:</strong>
+                                            <ul>
+                                                <li>Via úmida: 35%</li>
+                                                <li>Via seca: 45%</li>
+                                                <li>Cereja descascado: 20%</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Unidades beneficiadoras:</strong> 125</li>
+                                        <li><strong>Capacidade instalada:</strong> 2,5 milhões sacas/ano</li>
+                                    </ul>
+                                    <p class="source">Fonte: ABIC/EMBRAPA (2024)</p>
+                                </div>
+
+                                <!-- Distribuição por Estado -->
+                                <div class="distribuicao-regional">
+                                    <h4>Produção por Estado da Região Norte</h4>
+                                    <div class="estado-grid">
+                                        <div class="estado-card">
+                                            <h5>Rondônia</h5>
+                                            <ul>
+                                                <li><strong>Área cultivada:</strong> 68.000 hectares</li>
+                                                <li><strong>Produção:</strong> 1,8 milhão sacas/ano</li>
+                                                <li><strong>Principais municípios:</strong>
+                                                    <ul>
+                                                        <li>Alto Alegre dos Parecis</li>
+                                                        <li>Alta Floresta D'Oeste</li>
+                                                        <li>Cacoal</li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>Produtividade média:</strong> 26,5 sacas/ha</li>
+                                            </ul>
+                                            <p class="source">Fonte: SEAGRI-RO (2024)</p>
+                                        </div>
+
+                                        <div class="estado-card">
+                                            <h5>Acre</h5>
+                                            <ul>
+                                                <li><strong>Área cultivada:</strong> 12.000 hectares</li>
+                                                <li><strong>Produção:</strong> 180.000 sacas/ano</li>
+                                                <li><strong>Principais municípios:</strong>
+                                                    <ul>
+                                                        <li>Acrelândia</li>
+                                                        <li>Plácido de Castro</li>
+                                                        <li>Rio Branco</li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>Produtividade média:</strong> 15 sacas/ha</li>
+                                            </ul>
+                                            <p class="source">Fonte: SEPA-AC (2024)</p>
+                                        </div>
+
+                                        <div class="estado-card">
+                                            <h5>Amazonas</h5>
+                                            <ul>
+                                                <li><strong>Área cultivada:</strong> 8.500 hectares</li>
+                                                <li><strong>Produção:</strong> 120.000 sacas/ano</li>
+                                                <li><strong>Principais municípios:</strong>
+                                                    <ul>
+                                                        <li>Apuí</li>
+                                                        <li>Maués</li>
+                                                        <li>Presidente Figueiredo</li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>Produtividade média:</strong> 14 sacas/ha</li>
+                                            </ul>
+                                            <p class="source">Fonte: IDAM (2024)</p>
+                                        </div>
+
+                                        <!-- Outros estados com produção menor mas significativa -->
+                                        <div class="estado-card">
+                                            <h5>Pará</h5>
+                                            <ul>
+                                                <li><strong>Área cultivada:</strong> 15.000 hectares</li>
+                                                <li><strong>Produção:</strong> 225.000 sacas/ano</li>
+                                                <li><strong>Principais regiões:</strong>
+                                                    <ul>
+                                                        <li>Transamazônica</li>
+                                                        <li>Santarém</li>
+                                                        <li>Altamira</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <p class="source">Fonte: SEDAP-PA (2024)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Dados Nutricionais e Qualidade -->
+                                <div class="produto-data">
+                                    <h4>Características e Qualidade</h4>
+                                    <ul>
+                                        <li><strong>Perfil sensorial (Robusta Amazônico):</strong>
+                                            <ul>
+                                                <li>Corpo: Encorpado a muito encorpado</li>
+                                                <li>Acidez: Baixa a média</li>
+                                                <li>Aroma: Chocolate, castanhas, especiarias</li>
+                                                <li>Notas: Caramelo, amêndoas, cereais</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Composição química:</strong>
+                                            <ul>
+                                                <li>Cafeína: 2,2-2,7%</li>
+                                                <li>Ácidos clorogênicos: 7-10%</li>
+                                                <li>Trigonelina: 0,6-0,75%</li>
+                                                <li>Proteínas: 11-13%</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="source">Fonte: EMBRAPA/ABIC (2024)</p>
+                                </div>
+
+                                <!-- Certificações e Qualidade -->
+                                <div class="certificacoes">
+                                    <h4>Certificações e Indicações Geográficas</h4>
+                                    <ul>
+                                        <li><strong>Certificações de Qualidade:</strong>
+                                            <ul>
+                                                <li>Café Qualidade Robusta: 45% da produção</li>
+                                                <li>Certificado de Origem: 35%</li>
+                                                <li>Orgânico: 12%</li>
+                                                <li>Fair Trade: 8%</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Indicações Geográficas:</strong>
+                                            <ul>
+                                                <li>IG Matas de Rondônia (em processo)</li>
+                                                <li>IG Café da Amazônia (em desenvolvimento)</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="source">Fonte: INPI/MAPA (2024)</p>
+                                </div>
+
+                                <!-- Aspectos Socioculturais -->
+                                <div class="aspectos-socioculturais">
+                                    <h4>Dimensão Social e Cultural</h4>
+                                    <ul>
+                                        <li><strong>Perfil dos produtores:</strong>
+                                            <ul>
+                                                <li>Agricultura familiar: 85%</li>
+                                                <li>Médios produtores: 12%</li>
+                                                <li>Grandes produtores: 3%</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Geração de empregos:</strong>
+                                            <ul>
+                                                <li>Diretos: 45.000</li>
+                                                <li>Indiretos: 120.000</li>
+                                                <li>Sazonais: 35.000</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="source">Fonte: CONAB/SEAGRI (2024)</p>
+                                </div>
+
+                                <!-- Pesquisa e Inovação -->
+                                <div class="pesquisa-inovacao">
+                                    <h4>Pesquisa e Desenvolvimento</h4>
+                                    <ul>
+                                        <li><strong>Programas de melhoramento:</strong>
+                                            <ul>
+                                                <li>Clones adaptados: 15 variedades</li>
+                                                <li>Resistência a doenças: 8 projetos</li>
+                                                <li>Qualidade de bebida: 12 projetos</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Centros de pesquisa:</strong>
+                                            <ul>
+                                                <li>EMBRAPA Rondônia</li>
+                                                <li>Instituto Agronômico (IAC)</li>
+                                                <li>Universidades: 8 programas</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="source">Fonte: EMBRAPA/CNPq (2024)</p>
+                                </div>
+
+                                <!-- Sustentabilidade -->
+                                <div class="sustentabilidade">
+                                    <h4>Aspectos Ambientais</h4>
+                                    <ul>
+                                        <li><strong>Sistemas agroflorestais:</strong>
+                                            <ul>
+                                                <li>Área total: 56.000 hectares</li>
+                                                <li>Espécies consorciadas: média de 8/ha</li>
+                                                <li>Sequestro de carbono: 8,5 tCO²e/ha/ano</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Práticas sustentáveis:</strong>
+                                            <ul>
+                                                <li>Manejo orgânico: 15.000 ha</li>
+                                                <li>Conservação de solo: 85% das áreas</li>
+                                                <li>Reuso de resíduos: 65% das propriedades</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="source">Fonte: EMBRAPA/ICMBio (2024)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Análise de Impacto Socioeconômico -->
+        <section id="impacto" class="section">
+            <h2>Análise de Impacto Socioeconômico da Bioeconomia na Região Norte</h2>
+            
+            <div class="impact-dashboard">
+                <!-- Indicadores Principais da Região Norte -->
+                <div class="indicadores-principais">
+                    <div class="indicador-card">
+                        <div class="indicador-valor">R$ 32,5B</div>
+                        <div class="indicador-label">PIB da Bioeconomia na Região Norte</div>
+                        <div class="indicador-variacao positiva">+15,4% vs 2022</div>
+                        <div class="indicador-contexto">10,2% do PIB regional total</div>
+                    </div>
+                    <div class="indicador-card">
+                        <div class="indicador-valor">1,16M</div>
+                        <div class="indicador-label">Empregos na Região Norte</div>
+                        <div class="indicador-variacao positiva">+8,2% vs 2022</div>
+                        <div class="indicador-contexto">15% da força de trabalho regional</div>
+                    </div>
+                    <div class="indicador-card">
+                        <div class="indicador-valor">280K</div>
+                        <div class="indicador-label">Famílias Beneficiadas</div>
+                        <div class="indicador-variacao positiva">+12,5% vs 2022</div>
+                        <div class="indicador-contexto">Distribuídas em 7 estados</div>
+                    </div>
+                    <div class="indicador-card">
+                        <div class="indicador-valor">R$ 2.450</div>
+                        <div class="indicador-label">Renda Média Mensal Regional</div>
+                        <div class="indicador-variacao positiva">+18,2% vs 2022</div>
+                        <div class="indicador-contexto">22% acima da média regional geral</div>
+                    </div>
+                </div>
+
+                <!-- Gráficos -->
+                <div class="graficos-grid">
+                    <!-- PIB por Estado -->
+                    <div class="grafico-card">
+                        <h3>PIB da Bioeconomia por Estado (2024)</h3>
+                        <canvas id="pibEstadosChart"></canvas>
+                        <p class="source">Fonte: IBGE/SUFRAMA (2024)</p>
+                    </div>
+
+                    <!-- Empregos por Setor e Estado -->
+                    <div class="grafico-card">
+                        <h3>Distribuição de Empregos por Estado</h3>
+                        <canvas id="empregosEstadosChart"></canvas>
+                        <p class="source">Fonte: Ministério do Trabalho/RAIS (2024)</p>
+                    </div>
+
+                    <!-- Exportações por Estado -->
+                    <div class="grafico-card">
+                        <h3>Exportações da Bioeconomia por Estado</h3>
+                        <canvas id="exportacoesEstadosChart"></canvas>
+                        <p class="source">Fonte: MDIC/ComexStat (2024)</p>
+                    </div>
+
+                    <!-- Investimentos por Estado -->
+                    <div class="grafico-card">
+                        <h3>Investimentos por Estado e Setor</h3>
+                        <canvas id="investimentosEstadosChart"></canvas>
+                        <p class="source">Fonte: BNDES/SUDAM (2024)</p>
+                    </div>
+                </div>
+
+                <!-- Indicadores Detalhados por Estado -->
+                <div class="indicadores-detalhados">
+                    <div class="detalhe-card">
+                        <h3>Impacto Social por Estado</h3>
+                        <div class="estado-tabs">
+                            <button class="estado-tab active" data-estado="AM">Amazonas</button>
+                            <button class="estado-tab" data-estado="PA">Pará</button>
+                            <button class="estado-tab" data-estado="RO">Rondônia</button>
+                            <button class="estado-tab" data-estado="AC">Acre</button>
+                            <button class="estado-tab" data-estado="TO">Tocantins</button>
+                        </div>
+                        
+                        <!-- Contenido para Amazonas -->
+                        <div class="estado-content active" id="AM">
+                            <ul class="detalhe-list">
+                                <li>
+                                    <span class="detalhe-label">Comunidades atendidas</span>
+                                    <span class="detalhe-valor">450</span>
+                                </li>
+                                <li>
+                                    <span class="detalhe-label">Projetos sociais</span>
+                                    <span class="detalhe-valor">85</span>
+                                </li>
+                                <li>
+                                    <span class="detalhe-label">Capacitações</span>
+                                    <span class="detalhe-valor">15.000</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Contenido para Pará -->
+                        <div class="estado-content" id="PA">
+                            <ul class="detalhe-list">
+                                <li>
+                                    <span class="detalhe-label">Comunidades atendidas</span>
+                                    <span class="detalhe-valor">380</span>
+                                </li>
+                                <li>
+                                    <span class="detalhe-label">Projetos sociais</span>
+                                    <span class="detalhe-valor">72</span>
+                                </li>
+                                <li>
+                                    <span class="detalhe-label">Capacitações</span>
+                                    <span class="detalhe-valor">12.500</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Contenido para Rondônia -->
+                        <div class="estado-content" id="RO">
+                            <ul class="detalhe-list">
+                                <li>
+                                    <span class="detalhe-label">Comunidades atendidas</span>
+                                    <span class="detalhe-valor">220</span>
+                                </li>
+                                <li>
+                                    <span class="detalhe-label">Projetos sociais</span>
+                                    <span class="detalhe-valor">45</span>
+                                </li>
+                                <li>
+                                    <span class="detalhe-label">Capacitações</span>
+                                    <span class="detalhe-valor">8.500</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Contenido para Acre -->
+                        <div class="estado-content" id="AC">
+                            <ul class="detalhe-list">
+                                <li>
+                                    <span class="detalhe-label">Comunidades atendidas</span>
+                                    <span class="detalhe-valor">180</span>
+                                </li>
+                                <li>
+                                    <span class="detalhe-label">Projetos sociais</span>
+                                    <span class="detalhe-valor">38</span>
+                                </li>
+                                <li>
+                                    <span class="detalhe-label">Capacitações</span>
+                                    <span class="detalhe-valor">6.200</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Contenido para Tocantins -->
+                        <div class="estado-content" id="TO">
+                            <ul class="detalhe-list">
+                                <li>
+                                    <span class="detalhe-label">Comunidades atendidas</span>
+                                    <span class="detalhe-valor">150</span>
+                                </li>
+                                <li>
+                                    <span class="detalhe-label">Projetos sociais</span>
+                                    <span class="detalhe-valor">32</span>
+                                </li>
+                                <li>
+                                    <span class="detalhe-label">Capacitações</span>
+                                    <span class="detalhe-valor">5.800</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="source">Fonte: PNUD Brasil/Governos Estaduais (2024)</p>
+                    </div>
+
+                    <div class="detalhe-card">
+                        <h3>Impacto Econômico Regional</h3>
+                        <div class="impacto-grid">
+                            <div class="impacto-estado">
+                                <h4>Amazonas</h4>
+                                <div class="impacto-valor">R$ 12,8B</div>
+                                <div class="impacto-desc">39% do total regional</div>
+                            </div>
+                            <div class="impacto-estado">
+                                <h4>Pará</h4>
+                                <div class="impacto-valor">R$ 10,2B</div>
+                                <div class="impacto-desc">31% do total regional</div>
+                            </div>
+                            <!-- Outros estados... -->
+                        </div>
+                        <p class="source">Fonte: BNDES/Secretarias Estaduais (2024)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusao" class="section">
+            <h2>Considerações Finais</h2>
+            <div class="conclusion-container">
+                <!-- Síntese da Pesquisa -->
+                <div id="sintese" class="conclusion-card">
+                    <h3>Síntese da Pesquisa</h3>
+                    <div class="sintese-content">
+                        <div class="sintese-item">
+                            <h4>Principais Resultados</h4>
+                            <ul>
+                                <li>A bioeconomia na Região Norte representa 15,4% do PIB regional (R$ 32,5 bilhões)</li>
+                                <li>Geração de 310.000 empregos diretos e 850.000 indiretos</li>
+                                <li>Exportações atingiram US$ 3,2 bilhões em 2023</li>
+                                <li>850 comunidades tradicionais beneficiadas diretamente</li>
+                            </ul>
+                        </div>
+
+                        <div class="sintese-item">
+                            <h4>Avanços Significativos</h4>
+                            <ul>
+                                <li>Desenvolvimento de 235 projetos sociais ativos</li>
+                                <li>Implementação de 45 programas de capacitação técnica</li>
+                                <li>Estabelecimento de 180 cooperativas fortalecidas</li>
+                                <li>Aumento de 35% na renda familiar média</li>
+                            </ul>
+                        </div>
+
+                        <div class="sintese-item">
+                            <h4>Desafios Futuros</h4>
+                            <ul>
+                                <li>Ampliação da infraestrutura de beneficiamento</li>
+                                <li>Fortalecimento das cadeias produtivas locais</li>
+                                <li>Expansão do acesso a mercados internacionais</li>
+                                <li>Intensificação de pesquisas em biotecnologia</li>
+                            </ul>
+                        </div>
+
+                        <div class="sintese-item">
+                            <h4>Recomendações</h4>
+                            <ul>
+                                <li>Aumentar investimentos em P&D e inovação</li>
+                                <li>Fortalecer parcerias público-privadas</li>
+                                <li>Expandir programas de capacitação técnica</li>
+                                <li>Desenvolver políticas de incentivo fiscal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Referências Bibliográficas -->
+                <div id="referencias" class="references">
+                    <h3>Referências Bibliográficas</h3>
+                    <ul class="reference-list">
+                        <!-- Referências Institucionais -->
+                        <li>EMBRAPA. Bioeconomia da Amazônia: oportunidades e desafios ao desenvolvimento sustentável. Brasília: Embrapa Amazônia Oriental, 2023.</li>
+                        <li>INPA. Produtos Florestais Não Madeireiros na Amazônia. Manaus: Instituto Nacional de Pesquisas da Amazônia, 2023.</li>
+                        <li>SUFRAMA. Potencialidades Regionais: Estudo de Viabilidade Econômica. Manaus: Superintendência da Zona Franca de Manaus, 2023.</li>
+                        <li>SUDAM. Relatório de Desenvolvimento Regional. Belém: Superintendência do Desenvolvimento da Amazônia, 2023.</li>
+                        
+                        <!-- Referências Acadêmicas -->
+                        <li>UFPA. Bioeconomia e Desenvolvimento Regional na Amazônia. Belém: Núcleo de Altos Estudos Amazônicos, 2023.</li>
+                        <li>MPEG. Biodiversidade e Conhecimentos Tradicionais. Belém: Museu Paraense Emílio Goeldi, 2023.</li>
+                        <li>CEPLAC. Análise da Cadeia Produtiva do Cacau. Ilhéus: Comissão Executiva do Plano da Lavoura Cacaueira, 2023.</li>
+                        
+                        <!-- Referências Governamentais -->
+                        <li>IBGE. Produção Agrícola Municipal. Rio de Janeiro: Instituto Brasileiro de Geografia e Estatística, 2023.</li>
+                        <li>MDIC. Relatório de Exportações da Região Norte. Brasília: Ministério do Desenvolvimento, Indústria e Comércio, 2023.</li>
+                        <li>MMA. Plano de Ação para Prevenção e Controle do Desmatamento na Amazônia Legal. Brasília: Ministério do Meio Ambiente, 2023.</li>
+                        
+                        <!-- Referências Técnicas -->
+                        <li>IDESP-PA. Cadeia Produtiva da Castanha-do-Pará no Estado do Pará. Belém: Instituto de Desenvolvimento Econômico, Social e Ambiental do Pará, 2023.</li>
+                        <li>SEDAP-PA. Relatório Anual do Setor Agropecuário. Belém: Secretaria de Desenvolvimento Agropecuário e da Pesca, 2023.</li>
+                        <li>SEAD. Agricultura Familiar na Amazônia. Brasília: Secretaria Especial de Agricultura Familiar, 2023.</li>
+                        
+                        <!-- Referências de Projetos -->
+                        <li>CNPq. Projeto 402.783/2021-3: Desenvolvimento de Bioprodutos da Amazônia. Brasília, 2023.</li>
+                        <li>FAPESPA. Projeto 2021/567892: Bioeconomia do Açaí. Belém, 2023.</li>
+                        <li>BNDES. Planejamento Estratégico 2024-2025: Bioeconomia na Amazônia. Rio de Janeiro, 2023.</li>
+                        
+                        <!-- Referências Internacionais -->
+                        <li>PNUD Brasil. Relatório de Desenvolvimento Humano: Comunidades Tradicionais. Brasília, 2023.</li>
+                        <li>FAO. Non-timber Forest Products in the Amazon Region. Roma: Food and Agriculture Organization, 2023.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html> 
