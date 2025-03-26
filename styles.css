@@ -1733,4 +1733,37 @@ html {
 
 .leaflet-popup-content-wrapper {
     border-radius: var(--border-radius);
+}
+
+/* Ajustar el tamaño de los contenedores de gráficos */
+.graficos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 gráficos por fila */
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.grafico-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 400px; /* Altura fija para todos los gráficos */
+    position: relative;
+}
+
+.grafico-card canvas {
+    max-height: 300px !important; /* Altura máxima para el canvas */
+    width: 100% !important;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .graficos-grid {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+    
+    .grafico-card {
+        height: 350px;
+    }
 } 
